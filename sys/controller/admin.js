@@ -19,9 +19,9 @@ exports.render = function(connect,app){
 		if(session_this.power(powerCode)){
 			//获取后台视图
 			app.views('admin/index',{
-				'title' : '小剧客栈_后台管理',
-				'keywords' : '剧中人,bh-lay,网站建设,网页设计,设计师',
-				'description' : '小剧客栈是剧中人精心营造的一个向广大设计爱好者、喜欢剧中人开放的博客，小剧希望用设计师鞭策自己，愿意和你共同分享，一起进步！',
+				'title' : '月泉_后台管理',
+				'keywords' : '程序员',
+				'description' : 'c++/golang/java/js/php',
 				'username' : session_this.get('username'),
 				'userid' : session_this.get('uid')
 			},function(err,html){
