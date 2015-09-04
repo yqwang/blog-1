@@ -54,16 +54,17 @@ app.get('/blog/{id}', function(data,connect){
 });
 
 
-//实验室
-var labs = require('./controller/labs.js');
-app.get('/labs', function(data,connect){
-  views_select(connect,function(){
-    labs.list(connect,app);
-  });
-});
-app.get('/labs/{name}', function(data,connect){
-  labs.detail(connect,app,data.name);
-});
+// 实验室
+// TODO(未来再开放)
+// var labs = require('./controller/labs.js');
+// app.get('/labs', function(data,connect){
+//   views_select(connect,function(){
+//     labs.list(connect,app);
+//   });
+// });
+// app.get('/labs/{name}', function(data,connect){
+//   labs.detail(connect,app,data.name);
+// });
 
 //后台
 var admin = require('./controller/admin.js');
