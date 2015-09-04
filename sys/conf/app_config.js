@@ -7,13 +7,14 @@
 module.exports = {
 	host : '*',
   //端口号
-	port : 80,
+	port : 8000,
   //静态资源
   static: {
     //静态资源根目录
     root: '../web/',
     //静态资源缓存时间
-    maxAge: 60 * 60 * 24 * 365,
+    // maxAge: 60 * 60 * 24 * 365,
+    maxAge: 0,
     //定义文件类型 Mime-Type
     mime : {
       html : 'text/html',
@@ -61,10 +62,10 @@ module.exports = {
   },
   //数据库链接
 	mongo : {
-		host: 'localhost',
+		host: '127.0.0.1',
 		port: 27017,
-		user: 'lay',
-		pass: '19900927',
+		user: 'blog_rw',
+		pass: '123456',
 		db_name: 'blog'
 	}
 }; 

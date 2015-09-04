@@ -227,7 +227,7 @@ define(function (require, exports) {
   
   //做个好玩的
   document.addEventListener('visibilitychange', function() {
-    document.title = document.hidden ? '出BUG了，快看！':'小剧客栈，剧中人的个人博客！';
+    document.title = document.hidden ? '出BUG了，快看！':'月泉的个人博客！';
   });
 });
 
@@ -316,7 +316,7 @@ function routerHandle(lofox) {
    * 首页
    */
   lofox.set('/', function () {
-    this.title('小剧客栈_剧中人的个人空间 网页设计师博客 互动设计学习者');
+    this.title('月泉');
     L.nav.setCur('/');
     var dom = getNewPage();
 
@@ -324,7 +324,7 @@ function routerHandle(lofox) {
   })
   // 博文列表
   .set('/blog', function (param, pathnde, search) {
-    this.title('我的博客_小剧客栈');
+    this.title('我的博客_月泉');
     L.nav.setCur('blog');
     var dom = getNewPage();
 
@@ -334,7 +334,7 @@ function routerHandle(lofox) {
    * 博客详细页
    */
   lofox.set('/blog/{id}', function (param) {
-    this.title('我的博客_小剧客栈');
+    this.title('我的博客_月泉');
     L.nav.setCur('blog');
     var dom = getNewPage();
     o_active_page = new L.views.blogDetail(dom, param.id, function (title) {
@@ -343,7 +343,7 @@ function routerHandle(lofox) {
   })
   //实验室列表页
   .set('/labs', function () {
-    this.title('实验室_小剧客栈');
+    this.title('实验室_月泉');
 
     L.nav.setCur('labs');
     var dom = getNewPage();
@@ -351,7 +351,7 @@ function routerHandle(lofox) {
   })
   // 留言板
   .set('/bless', function () {
-    this.title('留言板_小剧客栈');
+    this.title('留言板_月泉');
     L.nav.setCur('bless');
     var dom = getNewPage();
 
