@@ -21,7 +21,7 @@ exports.upload = function (req,callback){
 				fs.unlink(files[i].path);
 				newFiles.push({
  	    			'name' : 'upload.jpg',
- 	    			'url' : 'http://static.bh-lay.com/demo/upload.jpg'
+ 	    			'url' : 'http://static.yuequan.wang/demo/upload.jpg'
  	    		});
 			}
 			json.files = newFiles;
