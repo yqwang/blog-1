@@ -105,9 +105,9 @@ exports.list = function (connect,app){
       });
       //获取视图
       app.views('blogList',{
-        title : '我的博客_小剧客栈_剧中人的个人博客',
-        keywords : '博客,文章,心得,剧中人,小剧客栈,前端工程师,设计师,nodeJS',
-        description : '剧中人的文笔很差，却也喜欢时常写点东西，不管是技术上的分享，生活上的感悟，还是天马行空的乱弹，小剧都会写在这里！',
+        title : '我的博客_月泉的个人博客',
+        keywords : '后台开发工程师，c/c++, Java, Golang',
+        description : '分享生活，分享技术',
         list : list,
         pagination : page_html
       },function(err,html){
